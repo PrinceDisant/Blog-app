@@ -20,7 +20,8 @@ function Sidebar() {
         <ul className="sidebarList">
           <li className="sidebarListItem">Front-End</li>
           <li className="sidebarListItem">Back-End</li>
-          <li className="sidebarListItem">Health</li>
+          <li className="sidebarListItem">Others</li>
+          <li className="sidebarListItem">Non-Tech Blogs</li>
         </ul>
       </div>
       <div className="sidebarItem">

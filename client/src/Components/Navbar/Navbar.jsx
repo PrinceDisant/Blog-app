@@ -5,9 +5,9 @@ function Navbar() {
     return (
         <div className="nav">
             <div className="left">
-                <i className="navIcon fab fa-facebook-f"></i>
-                <i className="navIcon fab fa-twitter"></i>
-                <i className="navIcon fab fa-instagram"></i>
+                <i className="navIcon facebook-icon fab fa-facebook-f"></i>
+                <i className="navIcon twitter-icon fab fa-twitter"></i>
+                <i className="navIcon instagram-icon fab fa-instagram"></i>
             </div>
             <div className="center">
                 <ul className="navList">

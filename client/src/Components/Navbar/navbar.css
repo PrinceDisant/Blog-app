@@ -26,17 +26,17 @@
     transition-duration: 0.13s;
 }
 
-.fa-facebook-f:hover{
+.facebook-icon:hover{
     color: #1873eb;
     font-size: 25px;
 }
 
-.fa-twitter:hover{
+.twitter-icon:hover{
     color: #5da9dd;
     font-size: 25px;
 }
 
-.fa-instagram:hover{
+.instagram-icon:hover{
     color: #e34861;
     font-size: 25px;
 }
