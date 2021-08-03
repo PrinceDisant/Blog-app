@@ -6,7 +6,7 @@
     align-items: center;
     background: 
         linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
-        url("https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        url("https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
 }
 
@@ -29,7 +29,12 @@
     padding: 10px;
     background-color: white;
     border: none;
+    border-radius: 10px;
 }
+
+.SignupInput:focus {
+    outline: none;
+  }
 
 .SignupButton{
     margin-top: 20px;
@@ -39,6 +44,7 @@
     color: white;
     border-radius: 10px;
     padding: 10px;
+    text-align: center;
 }
 
 .signupLoginButton{
