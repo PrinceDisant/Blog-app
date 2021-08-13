@@ -1,28 +1,30 @@
 const mongoose = require("mongoose");
-const { string } = require("prop-types");
 
-const PostSchema = new mongoose.Schema({
-    title:{
-        type:string,
-        required:true,
-        unique:true
+const PostSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+      unique: true,
     },
-    description:{
-        type:string,
-        required:true,
+    desc: {
+      type: String,
+      required: true,
     },
-    photo:{
-        type:string,
-        required:false,
+    photo: {
+      type: String,
+      required: false,
     },
-    username:{
-        type:string,
-        required:false,
+    username: {
+      type: String,
+      required: true,
     },
-    catagories:{
-        type:array,
-        required:false
+    categories: {
+      type: Array,
+      required: false,
     },
-},{timestamps:true});
+  },
+  { timestamps: true }
+);
 
 module.exports = mongoose.model("Post", PostSchema);
