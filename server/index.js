@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
-const catagoryRoute = require("./routes/catagories");
+const catagoryRoute = require("./routes/categories");
 const multer = require("multer");
 
 dotenv.config();
@@ -37,7 +37,7 @@ app.post("/server/upload", upload.single("file"),(req,res)=>{
 app.use("/server/auth", authRoute);
 app.use("/server/users", userRoute);
 app.use("/server/posts", postRoute);
-app.use("/server/catagories", catagoryRoute);
+app.use("/server/categories", catagoryRoute);
 app.listen("5000", () => {
   console.log("Backend is running...");
 });
