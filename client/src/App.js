@@ -7,9 +7,11 @@ import Home from './pages/home/Home';
 import Single from './pages/single/Single';
 import Write from './pages/write/Write';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useContext } from 'react';
+import { context } from './context/Context';
 
 function App() {
-  const user = false;
+  const {user} = useContext(context);
   return (
     <Router>
       <Navbar />
