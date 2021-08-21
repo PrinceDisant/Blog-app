@@ -4,7 +4,6 @@ import "./navbar.css";
 import { useContext } from 'react';
 import { context } from "../../context/Context";
 
-
 function Navbar() {
   const {user} = useContext(context);
   return (
