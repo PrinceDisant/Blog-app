@@ -5,7 +5,11 @@ import { useContext } from 'react';
 import { context } from "../../context/Context";
 
 function Navbar() {
-  const {user} = useContext(context);
+  const { user, dispatch } = useContext(context);
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
   return (
     <div className="nav">
       <div className="left">
@@ -35,14 +39,14 @@ function Navbar() {
               WRITE
             </Link>
           </li>
-          <li className="navListItem">{user && "LOGOUT"}</li>
+          <li className="navListItem" onClick={handleLogout}>{user && "LOGOUT"}</li>
         </ul>
       </div>
       <div className="right">
         {user ? (
           <img
             className="displayPicture"
-            src="https://images.pexels.com/photos/6437888/pexels-photo-6437888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            src={user.profilePic}
             alt="profile pic"
           />
         ) : (
