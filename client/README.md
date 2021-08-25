@@ -1,3 +1,15 @@
+# Blog app 
+
+## Overview
+
+This blog app was built to post content on how to learn to code fast
+
+## Features
+
+* Being able to create a new user account and signing into it
+* Being able to write your own post that will show up on the main page
+* Being able to edit your blogs 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
