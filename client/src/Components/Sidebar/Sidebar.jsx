@@ -25,7 +25,7 @@ function Sidebar() {
           journey of becoming a coder.
         </p>
       </div>
-      <div className="sidebarItem">
+      {/* <div className="sidebarItem">
         <span className="sidebarTitle">CATAGORIES</span>
         <ul className="sidebarList">
           {cats.map((c) => (
@@ -34,7 +34,7 @@ function Sidebar() {
             </Link>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW US</span>
         <div className="sidebarSocial">
