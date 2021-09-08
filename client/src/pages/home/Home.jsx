@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import Posts from '../../Components/Posts/Posts'
-import Sidebar from "../../Components/Sidebar/Sidebar";
+// import Sidebar from "../../Components/Sidebar/Sidebar";
 import "./home.css";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
@@ -21,7 +21,7 @@ function Home() {
       <Header />
       <div className="home">
           <Posts posts={posts} />
-          <Sidebar />
+          {/* <Sidebar /> */}
       </div>
     </>
   );
